@@ -1,14 +1,35 @@
 <template>
-  <div class="content">
-    <Nuxt />
+  <div>
+
+    <Navigation />
+
+    <div class="content">
+      <Nuxt />
+    </div>
+
   </div>
 </template>
+
+<script>
+
+import Navigation from "@/components/Navigation";
+
+export default {
+  
+  components: {
+    Navigation
+  }
+
+}
+</script>
 
 <style>
 
 * {
-  color: whitesmoke;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  color: whitesmoke;
 }
 
 body {
